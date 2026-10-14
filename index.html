@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <img src="https://placehold.co/60x60/2563eb/ffffff?text=BT"
+             alt="Budget Tracker logo"
+             width="60">
+        <h1>My Budget Tracker</h1>
+    </header>
+
+    <p>Track your income and expenses in one place.</p>
+
+    <section class="add-expense-section">
+        <h2>Add Expense</h2>
+
+        <form>
+            <label for="expense-name">Expense Name:</label>
+            <input type="text" id="expense-name"
+                   placeholder="e.g. Shopping">
+
+            <label for="expense-amount">Amount:</label>
+            <input type="number" id="expense-amount"
+                   placeholder="Enter amount">
+
+            <label for="expense-category">Category:</label>
+            <select id="expense-category">
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Rent">Rent</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="expense-date">Date:</label>
+            <input type="date" id="expense-date">
+
+            <button type="button">Add Expense</button>
+        </form>
+    </section>
+
+    <section class="expenses-section">
+        <h2>Your Expenses</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lunch</td>
+                    <td>500</td>
+                    <td>Food</td>
+                    <td>2026-10-01</td>
+                </tr>
+                <tr>
+                    <td>Bus fare</td>
+                    <td>200</td>
+                    <td>Transport</td>
+                    <td>2026-10-02</td>
+                </tr>
+                <tr>
+                    <td>House rent</td>
+                    <td>5000</td>
+                    <td>Rent</td>
+                    <td>2026-10-03</td>
+                </tr>
+                <tr>
+                    <td>Movie</td>
+                    <td>800</td>
+                    <td>Entertainment</td>
+                    <td>2026-10-04</td>
+                </tr>
+                <tr>
+                    <td>Soap</td>
+                    <td>150</td>
+                    <td>Other</td>
+                    <td>2026-10-05</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="video-section">
+        <h2>Budgeting Tips</h2>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/2W9sn7k7S7s"
+            title="Budgeting tips video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <details>
+        <summary>How to use this tracker</summary>
+        <p>
+            Enter the expense name, amount, category, and date.
+            The Add Expense button is prepared for future JavaScript
+            functionality. The table currently contains sample expenses.
+        </p>
+    </details>
+
+</body>
+</html>
